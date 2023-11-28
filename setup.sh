@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts
+mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi
 
 ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
 ln ~/.dotfiles/tmux.conf ~/.config/tmux/
 ln ~/.dotfiles/init.lua ~/.config/nvim/
 ln ~/.dotfiles/config ~/.config/i3/
+ln ~/.dotfiles/config.rasi ~/.config/rofi
 
-cd ~/.fonts
-git clone https://github.com/nRomanw/source-code-pro.git 
-cd ~
+
+git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
