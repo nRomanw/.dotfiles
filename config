@@ -58,9 +58,9 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
-bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -195,5 +195,5 @@ bar {
 
 
 exec --no-startup-id xmodmap -e 'keycode 135 = Super_R' && xset -r 135
-exec feh --bg-scale ~/Downloads/amazing-animal-beautiful-beautifull.jpg
-exec ~/.screenlayout/arandr_export.sh
+#exec feh --bg-scale ~/Downloads/amazing-animal-beautiful-beautifull.jpg
+#exec xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
