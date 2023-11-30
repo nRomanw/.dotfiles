@@ -2,6 +2,8 @@
 #
 mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi
 
+rm ~/.bashrc
+ln ~/dotfiles/bashrc ~/
 ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
 ln ~/.dotfiles/tmux.conf ~/.config/tmux/
 ln ~/.dotfiles/init.lua ~/.config/nvim/
