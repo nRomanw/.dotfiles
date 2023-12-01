@@ -15,8 +15,9 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 apt install slick-greeter htop neofetch autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc gimp nala alacritty git zsh syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
 
+. flat_installs.sh
 
-git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git ~/Downloads
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
 
 #timeshift bzw ich hätte gerne eine elegante backup lösung
