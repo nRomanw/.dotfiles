@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi
+mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents
 
 rm ~/.bashrc
 ln ~/.dotfiles/.bashrc ~/
