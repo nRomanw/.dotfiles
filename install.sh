@@ -31,6 +31,9 @@ flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub org.gnome.Maps -y
 flatpak install flathub com.github.tchx84.Flatseal -y
 
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer
+
 #timeshift bzw ich hätte gerne eine elegante backup lösung
 #session
 #tmux und tmux plugin manager (tpm)
