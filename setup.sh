@@ -10,5 +10,7 @@ ln ~/.dotfiles/init.lua ~/.config/nvim/
 ln ~/.dotfiles/config ~/.config/i3/
 ln ~/.dotfiles/config.rasi ~/.config/rofi
 
-
 git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
