@@ -20,7 +20,5 @@ brew install gcc neovim
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-git clone https://github.com/AdnanHodzic/auto-cpufreq.git ~/
-cd ~/auto-cpufreq && sudo ./auto-cpufreq-installer
-
-source ~/.bashrc
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer

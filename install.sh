@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+auto-cpufreq --install
+systemctl status auto-cpufreq
+
 mkdir -p /etc/apt/keyrings
 
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
@@ -29,6 +32,8 @@ flatpak install flathub org.gnome.Contacts -y
 flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub org.gnome.Maps -y
 flatpak install flathub com.github.tchx84.Flatseal -y
+
+tldr -u
 
 #timeshift bzw ich hätte gerne eine elegante backup lösung
 #session
