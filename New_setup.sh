@@ -14,6 +14,13 @@ ln ~/.dotfiles/config.rasi ~/.config/rofi
 
 mkdir -p /etc/apt/keyrings
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+brew install gcc neovim
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 
@@ -44,19 +51,14 @@ sudo flatpak install flathub com.github.tchx84.Flatseal -y
 
 tldr -u
 
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-brew install gcc neovim
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
+
 sudo auto-cpufreq --install
 sudo systemctl enable auto-cpufreq
 
