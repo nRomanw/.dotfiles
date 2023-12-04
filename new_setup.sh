@@ -25,9 +25,10 @@ mkdir -p /etc/apt/keyrings
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 brew install gcc neovim
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 
@@ -36,10 +37,11 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 
 sudo apt update -y
 
-sudo apt install slick-greeter htop neofetch autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc gimp nala alacritty git zsh syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
+sudo apt install slick-greeter htop neofetch autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc gimp nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+sudo flatpak install flathub org.gnome.Evince -y
 sudo flatpak install flathub net.waterfox.waterfox -y
 sudo flatpak install flathub io.gitlab.librewolf-community -y
 sudo flatpak install flathub com.github.Eloston.UngoogledChromium -y
