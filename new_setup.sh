@@ -5,15 +5,19 @@ sudo timedatectl set-timezone Europe/Berlin
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential procps curl file -y
 
-mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents
+mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts
+
+git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks/scripts
 
 rm ~/.bashrc
 ln ~/.dotfiles/.bashrc ~/
 ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
 ln ~/.dotfiles/tmux.conf ~/.config/tmux/
 ln ~/.dotfiles/init.lua ~/.config/nvim/
-ln ~/.dotfiles/config ~/.config/i3/
+ln ~/.dotfiles/i3/config ~/.config/i3/
+ln ~/.dotfiles/i3blocks/config ~/.config/i3blocks/
 ln ~/.dotfiles/config.rasi ~/.config/rofi
+
 
 mkdir -p /etc/apt/keyrings
 
