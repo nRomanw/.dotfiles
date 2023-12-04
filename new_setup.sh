@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+sudo timedatectl set-timezone Europe/Berlin
+
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential procps curl file -y
 
@@ -62,6 +65,7 @@ cd auto-cpufreq && sudo ./auto-cpufreq-installer
 sudo auto-cpufreq --install
 sudo systemctl enable auto-cpufreq
 
+sudo reboot now
 #timeshift bzw ich hätte gerne eine elegante backup lösung
 #session
 #tmux und tmux plugin manager (tpm)

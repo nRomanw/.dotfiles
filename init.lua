@@ -25,7 +25,7 @@ Kickstart.nvim is a template for your own configuration.
   - https://learnxinyminutes.com/docs/lua/
 
 
-  And then you can explore or search through `:help lua-guide`
+  And then you can xplore or search through `:help lua-guide`
   - https://neovim.io/doc/user/lua-guide.html
 
 
@@ -248,8 +248,11 @@ vim.o.hlsearch = true
 -- vorher false
 
 -- Make line numbers default
-vim.wo.relativenumber = true
+-- vim.wo.relativenumber = true
 vim.wo.number = true
+
+-- 8 Zeilen padding top und bottom beim scrollen
+vim.wo.scrolloff = 8
 
 -- Enable mouse mode
 vim.o.mouse = 'a'

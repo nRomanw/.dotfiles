@@ -193,7 +193,5 @@ bar {
         status_command i3blocks
 }
 
-
-exec --no-startup-id xmodmap -e 'keycode 135 = Super_R' && xset -r 135
 #exec feh --bg-scale ~/Downloads/amazing-animal-beautiful-beautifull.jpg
 #exec xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
