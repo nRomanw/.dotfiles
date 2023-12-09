@@ -29,15 +29,20 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 brew install gcc neovim
 
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
-
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"| sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 sudo apt update -y
 
-sudo apt install slick-greeter htop neofetch autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc gimp nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
+sudo apt install slick-greeter codium htop neofetch autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -45,13 +50,12 @@ sudo flatpak install flathub org.gnome.Evince -y
 sudo flatpak install flathub net.waterfox.waterfox -y
 sudo flatpak install flathub io.gitlab.librewolf-community -y
 sudo flatpak install flathub com.github.Eloston.UngoogledChromium -y
-sudo flatpak install flathub com.vscodium.codium -y
 sudo flatpak install flathub org.signal.Signal -y
 sudo flatpak install flathub com.calibre_ebook.calibre -y
 sudo flatpak install flathub com.github.micahflee.torbrowser-launcher -y
+sudo flatpak install flathub org.mozilla.Thunderbird -y
 sudo flatpak install flathub com.logseq.Logseq -y
 sudo flatpak install flathub org.mozilla.firefox -y
-sudo flatpak install flathub org.gnome.Geary -y
 sudo flatpak install flathub com.github.hluk.copyq -y
 sudo flatpak install flathub org.gnome.Contacts -y
 sudo flatpak install flathub org.libreoffice.LibreOffice -y
