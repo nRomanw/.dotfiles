@@ -17,7 +17,7 @@ ln ~/.dotfiles/init.lua ~/.config/nvim/
 ln ~/.dotfiles/i3/config ~/.config/i3/
 ln ~/.dotfiles/i3blocks/config ~/.config/i3blocks/
 ln ~/.dotfiles/config.rasi ~/.config/rofi
-
+ln ~/.dotfiles/.git-prompt.sh ~/
 
 mkdir -p /etc/apt/keyrings
 

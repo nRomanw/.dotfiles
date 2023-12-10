@@ -531,6 +531,14 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+  bashls = {
+    bash = {
+      command = {"bash-language-server"},
+      args = {"start"},
+      filetypes = {"sh"},
+      ignoredRootPaths = {"~"}
+    },
+  },
 
   lua_ls = {
     Lua = {
