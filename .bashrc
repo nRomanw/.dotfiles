@@ -109,12 +109,10 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 alias v=nvim
 alias nim=neovide
 alias sudo='sudo '
+alias tma='tmux a'
 alias qflipper="~/Appimages/qFlipper-x86_64-1.3.3.AppImage"
 
 # Add an "alert" alias for long running commands.  Use like so:
