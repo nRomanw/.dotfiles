@@ -158,6 +158,14 @@ require('lazy').setup({
       end,
     },
   },
+  --{
+  --  -- Catppuccin
+  --  'catppuccin/nvim',
+  --  priority = 1000,
+  --  config = function()
+  --    vim.cmd.colorscheme 'catppuccin'
+  --  end,
+  --},
 
   {
     -- Theme inspired by Atom
@@ -248,11 +256,15 @@ vim.o.hlsearch = true
 -- vorher false
 
 -- Make line numbers default
--- vim.wo.relativenumber = true
-vim.wo.number = true
+vim.o.relativenumber = true
+vim.o.number = true
 
 -- 8 Zeilen padding top und bottom beim scrollen
-vim.wo.scrolloff = 8
+vim.o.scrolloff = 8
+
+vim.o.hidden = true
+
+
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -267,6 +279,7 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
+vim.o.undodir = "$XDG_STATE_HOME/nvim/undo//"
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
