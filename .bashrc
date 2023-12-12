@@ -134,6 +134,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+XDG_STATE_HOME="$HOME/.local/state"
+
 . "$HOME/.cargo/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
