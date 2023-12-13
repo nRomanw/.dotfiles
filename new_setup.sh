@@ -46,6 +46,7 @@ sudo apt install slick-greeter codium htop neofetch autojump tldr ripgrep i3 i3b
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+sudo flatpak install flathub network.loki.Session -y
 sudo flatpak install flathub org.gnome.Evince -y
 sudo flatpak install flathub net.waterfox.waterfox -y
 sudo flatpak install flathub io.gitlab.librewolf-community -y
