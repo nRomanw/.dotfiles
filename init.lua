@@ -279,7 +279,7 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-vim.o.undodir = "$XDG_STATE_HOME/nvim/undo//"
+vim.o.undodir = "/home/roman/.local/state/nvim/undo//"
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true

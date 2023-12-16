@@ -42,7 +42,7 @@ shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-#shopt -s globstar
+shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -115,6 +115,7 @@ alias apt=nala
 alias sudo='sudo '
 alias tma='tmux a'
 alias qflipper="~/Appimages/qFlipper-x86_64-1.3.3.AppImage"
+alias cht=cht.sh
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -140,7 +141,7 @@ XDG_STATE_HOME="$HOME/.local/state"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
+#PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
 
 . ~/.git-prompt.sh
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[0;32m$(__git_ps1 " (%s)")\033[0m\$ '
