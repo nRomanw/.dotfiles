@@ -158,23 +158,23 @@ require('lazy').setup({
       end,
     },
   },
+  ------------ {
+  ------------   -- Catppuccin
+  ------------   'catppuccin/nvim',
+  ------------   priority = 1000,
+  ------------   config = function()
+  ------------     vim.cmd.colorscheme 'catppuccin'
+  ------------   end,
+  ------------ },
+
   {
-    -- Catppuccin
-    'catppuccin/nvim',
+    -- Theme inspired by Atom
+    'loctvl842/monokai-pro.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'catppuccin'
+      vim.cmd.colorscheme 'monokai-pro'
     end,
   },
-
-  ---------{
-  ---------  -- Theme inspired by Atom
-  ---------  'loctvl842/monokai-pro.nvim',
-  ---------  priority = 1000,
-  ---------  config = function()
-  ---------    vim.cmd.colorscheme 'monokai-pro'
-  ---------  end,
-  ---------},
 
   {
     -- Set lualine as statusline
@@ -279,7 +279,7 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-vim.o.undodir = "/home/roman/.local/state/nvim/undo//"
+vim.o.undodir = "$HOME/.local/state/nvim/undo//"
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
