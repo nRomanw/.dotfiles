@@ -1,12 +1,12 @@
 --[[
- ____   __ __  ____  ___ ___      ____  ____   ____  ______    _      __ __   ____ 
+ ____   __ __  ____  ___ ___      ____  ____   ____  ______    _      __ __   ____
 |    \ |  T  |l    j|   T   T    l    j|    \ l    j|      T  | T    |  T  T /    T
 |  _  Y|  |  | |  T | _   _ |     |  T |  _  Y |  T |      |  | |    |  |  |Y  o  |
 |  |  ||  |  | |  | |  \_/  |     |  | |  |  | |  | l_j  l_j  | l___ |  |  ||     |
 |  |  |l  :  ! |  | |   |   |     |  | |  |  | |  |   |  | __ |     T|  :  ||  _  |
 |  |  | \   /  j  l |   |   |     j  l |  |  | j  l   |  ||  T|     |l     ||  |  |
 l__j__j  \_/  |____jl___j___j    |____jl__j__j|____j  l__jl__jl_____j \__,_jl__j__j
-                                                                                   
+
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
@@ -119,7 +119,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -158,23 +158,23 @@ require('lazy').setup({
       end,
     },
   },
-  --{
-  --  -- Catppuccin
-  --  'catppuccin/nvim',
-  --  priority = 1000,
-  --  config = function()
-  --    vim.cmd.colorscheme 'catppuccin'
-  --  end,
-  --},
-
   {
-    -- Theme inspired by Atom
-    'loctvl842/monokai-pro.nvim',
+    -- Catppuccin
+    'catppuccin/nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'monokai-pro'
+      vim.cmd.colorscheme 'catppuccin'
     end,
   },
+
+  ---------{
+  ---------  -- Theme inspired by Atom
+  ---------  'loctvl842/monokai-pro.nvim',
+  ---------  priority = 1000,
+  ---------  config = function()
+  ---------    vim.cmd.colorscheme 'monokai-pro'
+  ---------  end,
+  ---------},
 
   {
     -- Set lualine as statusline
@@ -235,7 +235,7 @@ require('lazy').setup({
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
-  -- require 'kickstart.plugins.autoformat',
+  require 'kickstart.plugins.autoformat',
   -- require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -374,7 +374,7 @@ local function live_grep_git_root()
   local git_root = find_git_root()
   if git_root then
     require('telescope.builtin').live_grep({
-      search_dirs = {git_root},
+      search_dirs = { git_root },
     })
   end
 end

@@ -18,7 +18,6 @@
 # for examples
 
 neofetch
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -114,7 +113,9 @@ alias nim=neovide
 alias apt=nala
 alias sudo='sudo '
 alias tma='tmux a'
+alias tm=tmux
 alias qflipper="~/Appimages/qFlipper-x86_64-1.3.3.AppImage"
+alias gsc="/home/roman/workspaces/Webscraper_Crypto/webscrape_venv/bin/python3 /home/roman/workspaces/Webscraper_Crypto/gsc.py"
 alias cht=cht.sh
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -135,16 +136,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-XDG_STATE_HOME="$HOME/.local/state"
-
 . "$HOME/.cargo/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-#PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
 
-. ~/.git-prompt.sh
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[0;32m$(__git_ps1 " (%s)")\033[0m\$ '
+. /home/roman/.git-prompt.sh
+
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
