@@ -5,19 +5,8 @@
 #/\|___  /(____  //____  >|___|  /|__|    \___  > 
 #\/    \/      \/      \/      \/             \/  
                                                  
-#Die folgenden Zeilen haben den login gekillt:
-#if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
-#    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
-#fi
-
-#vi mode:
-#set -o vi
-
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 neofetch
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -119,10 +108,10 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-alias gs="git status"
-alias ga="git add"
-alias gc="git commit -m"
-alias gp="git push"
+alias gits="git status"
+alias gita="git add"
+alias gitc="git commit -m"
+alias gitp="git push"
 alias v=nvim
 alias nim=neovide
 alias apt=nala
