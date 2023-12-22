@@ -158,14 +158,14 @@ require('lazy').setup({
       end,
     },
   },
-  --------------{
-  --------------  -- Catppuccin
-  --------------  'catppuccin/nvim',
-  --------------  priority = 1000,
-  --------------  config = function()
-  --------------    vim.cmd.colorscheme 'catppuccin'
-  --------------  end,
-  --------------},
+  ----{
+  ----  -- Catppuccin
+  ----  'catppuccin/nvim',
+  ----  priority = 1000,
+  ----  config = function()
+  ----    vim.cmd.colorscheme 'catppuccin'
+  ----  end,
+  ----},
   {
     -- Theme inspired by Atom
     'Mofiqul/dracula.nvim',
@@ -175,14 +175,14 @@ require('lazy').setup({
     end,
   },
 
-  --------------{
-  --------------  -- Theme inspired by Atom
-  --------------  'loctvl842/monokai-pro.nvim',
-  --------------  priority = 1000,
-  --------------  config = function()
-  --------------    vim.cmd.colorscheme 'monokai-pro'
-  --------------  end,
-  --------------},
+  ----{
+  ----  -- Theme inspired by Atom
+  ----  'loctvl842/monokai-pro.nvim',
+  ----  priority = 1000,
+  ----  config = function()
+  ----    vim.cmd.colorscheme 'monokai-pro'
+  ----  end,
+  ----},
 
   {
     -- Set lualine as statusline
