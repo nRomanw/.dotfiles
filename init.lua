@@ -158,23 +158,31 @@ require('lazy').setup({
       end,
     },
   },
-  ------------ {
-  ------------   -- Catppuccin
-  ------------   'catppuccin/nvim',
-  ------------   priority = 1000,
-  ------------   config = function()
-  ------------     vim.cmd.colorscheme 'catppuccin'
-  ------------   end,
-  ------------ },
-
+  --------------{
+  --------------  -- Catppuccin
+  --------------  'catppuccin/nvim',
+  --------------  priority = 1000,
+  --------------  config = function()
+  --------------    vim.cmd.colorscheme 'catppuccin'
+  --------------  end,
+  --------------},
   {
     -- Theme inspired by Atom
-    'loctvl842/monokai-pro.nvim',
+    'Mofiqul/dracula.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'monokai-pro'
+      vim.cmd.colorscheme 'dracula'
     end,
   },
+
+  --------------{
+  --------------  -- Theme inspired by Atom
+  --------------  'loctvl842/monokai-pro.nvim',
+  --------------  priority = 1000,
+  --------------  config = function()
+  --------------    vim.cmd.colorscheme 'monokai-pro'
+  --------------  end,
+  --------------},
 
   {
     -- Set lualine as statusline
@@ -265,7 +273,6 @@ vim.o.scrolloff = 8
 vim.o.hidden = true
 
 
-
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -279,7 +286,7 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-vim.o.undodir = "$HOME/.local/state/nvim/undo//"
+vim.opt.undodir = vim.fn.expand('~/.local/state/nvim/undo//')
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
@@ -300,7 +307,6 @@ vim.o.termguicolors = true
 
 vim.o.autoindent = true
 vim.o.smartindent = true
-
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
