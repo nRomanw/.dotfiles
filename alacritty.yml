@@ -821,7 +821,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *Dracula
+colors: *Catppuccin-Macchiato 
 
 # Visual Bell
 #

@@ -191,9 +191,9 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
-        component_separators = '|',
-        section_separators = '',
+        theme = 'auto',
+        component_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
       },
     },
   },
@@ -286,7 +286,6 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-vim.opt.undodir = vim.fn.expand('~/.local/state/nvim/undo//')
 
 -- Case-insensitive searching UNLESS \C or capital in search
 vim.o.ignorecase = true
