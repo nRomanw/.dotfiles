@@ -12,7 +12,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -55,7 +55,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -122,11 +122,11 @@ set $ws2 "2.Browser"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws6 "6.LogSeq"
+set $ws7 "7.DocViewer"
+set $ws8 "8.Session"
+set $ws9 "9.KeePass"
+set $ws10 "10.Email"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -192,7 +192,26 @@ bar {
 	position top
         status_command i3blocks
 }
+exec alacritty -e tmux new -s "Auf gehts!"
 
+assign [class="LibreWolf"] $ws2
+assign [class="Logseq"] $ws6
+assign [class="Evince"] $ws7
+assign [class="Session"] $ws8
+assign [class="KeePassXC"] $ws9
+assign [class="thunderbird"] $ws10
+
+exec "flatpak run org.mozilla.Thunderbird"
+exec "flatpak run io.gitlab.librewolf-community"
+exec "flatpak run com.logseq.Logseq"
+exec "flatpak run network.loki.Session"
+exec "flatpak run org.gnome.Evince"
+exec evince
+exec keepassxc
+
+bindsym $mod+s scratchpad show 
+for_window [class="kitty"] move scratchpad
+exec kitty
 #exec --no-startup-id picom -f --xrender-fence #for transparency
 #exec feh --bg-scale ~/Downloads/amazing-animal-beautiful-beautifull.jpg
 #exec xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal

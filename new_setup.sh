@@ -42,7 +42,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 
 sudo apt update -y
 
-sudo apt install slick-greeter codium htop neofetch autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
+sudo apt install dunst slick-greeter codium htop neofetch picom autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -58,7 +58,6 @@ sudo flatpak install flathub org.mozilla.Thunderbird -y
 sudo flatpak install flathub com.logseq.Logseq -y
 sudo flatpak install flathub org.mozilla.firefox -y
 sudo flatpak install flathub com.github.hluk.copyq -y
-sudo flatpak install flathub org.gnome.Contacts -y
 sudo flatpak install flathub org.libreoffice.LibreOffice -y
 sudo flatpak install flathub org.gnome.Maps -y
 sudo flatpak install flathub com.github.tchx84.Flatseal -y

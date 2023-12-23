@@ -168,12 +168,21 @@ require('lazy').setup({
   ----},
   {
     -- Theme inspired by Atom
-    'Mofiqul/dracula.nvim',
+    'rose-pine/neovim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'dracula'
+      vim.cmd.colorscheme 'rose-pine'
     end,
   },
+
+  -----{
+  -----  -- Theme inspired by Atom
+  -----  'Mofiqul/dracula.nvim',
+  -----  priority = 1000,
+  -----  config = function()
+  -----    vim.cmd.colorscheme 'dracula'
+  -----  end,
+  -----},
 
   ----{
   ----  -- Theme inspired by Atom
