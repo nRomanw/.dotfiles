@@ -12,7 +12,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
+exec --no-startup-id xmodmap ~/.Xmodmap
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -192,6 +193,10 @@ bar {
 	position top
         status_command i3blocks
 }
+
+# Take a screenshot upon pressing $mod+x (select an area)
+bindsym $mod+x exec scrot  $HOME/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+
 exec alacritty -e tmux new -s "Auf gehts!"
 
 assign [class="LibreWolf"] $ws2
@@ -200,6 +205,7 @@ assign [class="Evince"] $ws7
 assign [class="Session"] $ws8
 assign [class="KeePassXC"] $ws9
 assign [class="thunderbird"] $ws10
+for_window [class="copyq"] floating enable
 
 exec "flatpak run org.mozilla.Thunderbird"
 exec "flatpak run io.gitlab.librewolf-community"
@@ -209,7 +215,7 @@ exec "flatpak run org.gnome.Evince"
 exec evince
 exec keepassxc
 
-bindsym $mod+s scratchpad show 
+bindsym $mod+v scratchpad show 
 for_window [class="kitty"] move scratchpad
 exec kitty
 #exec --no-startup-id picom -f --xrender-fence #for transparency

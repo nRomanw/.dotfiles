@@ -62,7 +62,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1 " (%s)")\$\033[01;37m\] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1 " (%s)")\$\[\033[01;37m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 " (%s)")]\$ '
 fi
@@ -107,8 +107,9 @@ alias sudo='sudo '
 alias tma='tmux a'
 alias tm=tmux
 alias qflipper="~/Appimages/qFlipper-x86_64-1.3.3.AppImage"
-alias gsc="/home/roman/workspaces/Webscraper_Crypto/webscrape_venv/bin/python3 /home/roman/workspaces/Webscraper_Crypto/gsc.py"
+alias gsc="/home/roman/workspaces/Webscraper_Crypto/venv/bin/python3 /home/roman/workspaces/Webscraper_Crypto/gsc.py"
 alias cht=cht.sh
+alias venv="source venv/bin/activate"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -132,3 +133,4 @@ fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+PATH="$HOME/.local/bin:$PATH"
