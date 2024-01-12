@@ -69,6 +69,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
 
+git clone https://github.com/qmk/qmk_firmware.git
+mv ~/dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/
 
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
