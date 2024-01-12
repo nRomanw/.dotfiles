@@ -17,7 +17,6 @@ ln ~/.dotfiles/init.lua ~/.config/nvim/
 ln ~/.dotfiles/i3/config ~/.config/i3/
 ln ~/.dotfiles/i3blocks/config ~/.config/i3blocks/
 ln ~/.dotfiles/config.rasi ~/.config/rofi
-ln ~/.dotfiles/.git-prompt.sh ~/
 
 mkdir -p /etc/apt/keyrings
 
@@ -42,7 +41,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 
 sudo apt update -y
 
-sudo apt install dunst scrot slick-greeter codium htop neofetch picom autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak -y
+sudo apt install dunst scrot slick-greeter codium htop neofetch picom autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme bleachbit vlc nala alacritty git syncthing brave-browser virt-manager keepassxc zulumount-gui zulucrypt-gui tmux vifm pcmanfm gufw flatpak libssl-dev -y
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -63,6 +62,8 @@ sudo flatpak install flathub org.gnome.Maps -y
 sudo flatpak install flathub com.github.tchx84.Flatseal -y
 
 tldr -u
+
+cargo install tmux-sessionizer
 
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
