@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS_PER_SIDE (MATRIX_COLS / 2)
 
 #define TAPPING_TERM 250
+#define MOUSEKEY_MAX_SPEED 5
 /*
  * Keyboard Matrix Assignments
  *
