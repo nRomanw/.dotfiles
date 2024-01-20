@@ -5,7 +5,7 @@ sudo timedatectl set-timezone Europe/Berlin
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential procps curl file -y
 
-mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts
+mkdir -p ~/.config/tmux ~/.config/nvim ~/.config/alacritty ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst
 
 git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks/scripts
 
@@ -17,6 +17,7 @@ ln ~/.dotfiles/init.lua ~/.config/nvim/
 ln ~/.dotfiles/i3/config ~/.config/i3/
 ln ~/.dotfiles/i3blocks/config ~/.config/i3blocks/
 ln ~/.dotfiles/config.rasi ~/.config/rofi
+ln ~/.dotfiles/dunstrc ~/.config/dunst
 
 mkdir -p /etc/apt/keyrings
 
@@ -70,7 +71,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
 
 git clone https://github.com/qmk/qmk_firmware.git ~/
-mv ~/dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/
+mv ~/.dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/
 
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cd auto-cpufreq && sudo ./auto-cpufreq-installer
@@ -79,6 +80,5 @@ sudo auto-cpufreq --install
 sudo systemctl enable auto-cpufreq
 
 sudo reboot now
+
 #timeshift bzw ich hätte gerne eine elegante backup lösung
-#session
-#tmux und tmux plugin manager (tpm)
