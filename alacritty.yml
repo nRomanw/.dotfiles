@@ -907,7 +907,7 @@ schemes:colors:
 # *Rose-Pine
 # *Rose-Pine-Moon
 
-colors: *Catppuccin-Mocha
+colors: *Rose-Pine-Moon
 
 # Visual Bell
 #

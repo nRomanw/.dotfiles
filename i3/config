@@ -221,5 +221,5 @@ bindsym $mod+v scratchpad show
 for_window [class="kitty"] move scratchpad
 exec kitty
 #exec --no-startup-id picom -f --xrender-fence #for transparency
-#exec feh --bg-scale ~/Downloads/amazing-animal-beautiful-beautifull.jpg
+exec feh --bg-scale ~/Sync/newest_desktop.jpg
 #exec xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
