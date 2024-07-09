@@ -1,0 +1,31 @@
+browser sensible-browser
+
+show-read-feeds no
+feed-sort-order unreadarticlecount-asc
+
+color info default default reverse
+color listnormal_unread yellow default
+color listfocus blue default reverse bold
+color listfocus_unread blue default reverse bold 
+
+
+macro v set browser "setsid -f flatpak run io.mpv.Mpv --speed=1.5 --really-quiet --no-terminal" ; open-in-browser ; set browser brave
+
+
+goto-next-feed no
+
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
+
+
+
+
+unbind-key C feedlist
+confirm-exit no
+cleanup-on-quit no
