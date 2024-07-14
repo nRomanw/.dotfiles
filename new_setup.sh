@@ -13,7 +13,6 @@ rm ~/.bashrc
 ln ~/.dotfiles/.bashrc ~/
 ln ~/.dotfiles/alacritty.yml ~/.config/alacritty/
 ln ~/.dotfiles/tmux.conf ~/.config/tmux/
-ln ~/.dotfiles/init.lua ~/.config/nvim/
 ln ~/.dotfiles/i3/config ~/.config/i3/
 ln ~/.dotfiles/i3blocks/config ~/.config/i3blocks/
 ln ~/.dotfiles/config.rasi ~/.config/rofi
