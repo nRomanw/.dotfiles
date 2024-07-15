@@ -16,6 +16,7 @@ esac
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
+HISTTIMEFORMAT="%Y-%m-%d %T "
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -123,6 +124,7 @@ alias gitp="git push"
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 export EDITOR=/home/linuxbrew/.linuxbrew/bin/nvim
+
 #Load autojump
 . /usr/share/autojump/autojump.sh
 
@@ -136,6 +138,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# GPG Agent
+export GPG_TTY=$(tty)
+export GPGKEY="roman@pgpkey.de"
 
 . "$HOME/.cargo/env"
 
