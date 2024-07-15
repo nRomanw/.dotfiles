@@ -141,7 +141,7 @@ fi
 
 # GPG Agent
 export GPG_TTY=$(tty)
-export GPGKEY="roman@pgpkey.de"
+export GPGKEY
 
 . "$HOME/.cargo/env"
 
