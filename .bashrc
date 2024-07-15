@@ -105,7 +105,7 @@ alias p3='python3 '
 
 alias wtr="curl wttr.in/hannover"
 alias nb=newsboat
-alias iv=nsxiv
+alias iv="nsxiv -f"
 alias cht=cht.sh
 alias tm=tmux
 alias v=nvim
