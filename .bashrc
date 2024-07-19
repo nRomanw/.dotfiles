@@ -114,6 +114,7 @@ alias tm=tmux
 alias v=nvim
 alias nim=neovide
 alias tma='tmux a'
+alias fm=ranger
 
 alias gits="git status"
 alias gita="git add"
