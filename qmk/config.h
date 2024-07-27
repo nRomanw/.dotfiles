@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 
-#define TAPPING_TERM 215
+#define TAPPING_TERM 225
 //#define PERMISSIVE_HOLD
 #define MOUSEKEY_MAX_SPEED 5
 /*
