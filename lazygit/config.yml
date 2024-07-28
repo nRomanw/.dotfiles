@@ -1,0 +1,9 @@
+gui:
+  showIcons: true
+  theme:
+    selectedLineBgColor:
+      - reverse
+git:
+  paging:
+    useConfig: true 
+
