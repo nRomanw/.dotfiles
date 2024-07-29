@@ -5,9 +5,10 @@ sudo timedatectl set-timezone Europe/Berlin
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential procps curl file -y
 
-mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit
+mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit ~/.config/nvim
 
 git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks/scripts
+git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvim
 
 rm ~/.bashrc
 ln ~/.dotfiles/.bashrc ~/
@@ -23,7 +24,7 @@ ln ~/.dotfiles/newsboat/config ~/.config/newsboat
 
 mkdir -p /etc/apt/keyrings
 
-sudo sh <(curl -L https://nixos.org/nix/install) --daemon
+sh <(curl -L https://nixos.org/nix/install) --daemon
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
