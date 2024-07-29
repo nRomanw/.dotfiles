@@ -22,7 +22,6 @@ ln ~/.dotfiles/rofi/config.rasi ~/.config/rofi
 ln ~/.dotfiles/dunst/dunstrc ~/.config/dunst
 ln ~/.dotfiles/newsboat/config ~/.config/newsboat
 
-mkdir -p /etc/apt/keyrings
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
 
