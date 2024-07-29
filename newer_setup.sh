@@ -34,7 +34,7 @@ echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://ap
 
 sudo apt update -y
 
-sudo apt install unzip make gcc dunst gh scrot slick-greeter gnupg newsboat htop neofetch picom autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme nala alacritty mpv git syncthing virt-manager keepassxc zulumount-gui zulucrypt-gui tmux ranger pcmanfm gufw flatpak xclip libssl-dev -y
+sudo apt install unzip make timeshift gcc dunst gh scrot slick-greeter gnupg newsboat htop neofetch picom autojump tldr ripgrep i3 i3blocks rofi papirus-icon-theme nala alacritty mpv git syncthing virt-manager keepassxc zulumount-gui zulucrypt-gui tmux ranger pcmanfm gufw flatpak xclip libssl-dev -y
 
 nix-env -iA nixpkgs.zathura nixpkgs.neovim nixpkgs.lazygit
 
