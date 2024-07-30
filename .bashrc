@@ -120,6 +120,7 @@ alias gits="git status"
 alias gita="git add"
 alias gitc="git commit -m"
 alias gitp="git push"
+alias lg=lazygit
 
 alias us="setxkbmap us"
 alias de="setxkbmap de"
