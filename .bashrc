@@ -107,7 +107,6 @@ alias p3='python3 '
 alias wtr="curl wttr.in/hannover"
 alias nb=newsboat
 alias mail=neomutt
-alias mpv="flatpak run io.mpv.Mpv"
 alias iv="nsxiv -f *"
 alias cht=cht.sh
 alias tm=tmux
