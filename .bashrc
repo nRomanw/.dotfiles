@@ -153,5 +153,4 @@ export GPGKEY
 . "$HOME/.cargo/env"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 PATH="$HOME/.local/bin:$PATH"
