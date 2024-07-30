@@ -17,6 +17,8 @@ ln ~/.dotfiles/lazygit/config.yml ~/.config/lazygit
 ln ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/
 ln ~/.dotfiles/tmux/tmux.conf ~/.config/tmux/
 ln ~/.dotfiles/i3/config ~/.config/i3/
+ln ~/.dotfiles/i3/swapper ~/.config/i3/
+ln ~/.dotfiles/i3/master-stack ~/.config/i3/
 ln ~/.dotfiles/i3blocks/config ~/.config/i3blocks/
 ln ~/.dotfiles/rofi/config.rasi ~/.config/rofi
 ln ~/.dotfiles/dunst/dunstrc ~/.config/dunst
@@ -63,6 +65,10 @@ git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
 
 git clone https://github.com/qmk/qmk_firmware.git ~/
 mv ~/.dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/
+rm ~/qmk_firmware/keyboards/3w6/rev2/config.h
+ln ~/.dotfiles/qmk/config.h ~/qmk_firmware/keyboards/3w6/rev2
+mkdir ~/qmk_firmware/keyboards/3w6/rev2/keymaps/nRomanw
+ln ~/.dotfiles/qmk/keymap.json ~/qmk_firmware/keyboards/3w6/rev2/keymaps/nRomanw
 
 #git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 #cd auto-cpufreq && sudo ./auto-cpufreq-installer
