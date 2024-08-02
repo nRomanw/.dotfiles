@@ -62,7 +62,7 @@ cargo install tmux-sessionizer
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 git clone https://github.com/nRomanw/source-code-pro.git ~/.local/share/fonts
-cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
+cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/NerdFontsSymbolsOnly
 cd ~/
 
 git clone https://github.com/qmk/qmk_firmware.git ~/
