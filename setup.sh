@@ -5,7 +5,7 @@ sudo timedatectl set-timezone Europe/Berlin
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential procps curl file -y
 
-mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit ~/.config/nvim
+mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.local/share/fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit ~/.config/nvim
 
 git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks/scripts
 git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvim
@@ -61,7 +61,9 @@ cargo install tmux-sessionizer
 
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
-git clone https://github.com/nRomanw/source-code-pro.git ~/.fonts
+git clone https://github.com/nRomanw/source-code-pro.git ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
+cd ~/
 
 git clone https://github.com/qmk/qmk_firmware.git ~/
 mv ~/.dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/
