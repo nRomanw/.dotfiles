@@ -99,9 +99,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 alias sudo='sudo '
-alias qflipper="~/Appimages/qFlipper-x86_64-1.3.3.AppImage"
-alias gsc="/home/roman/workspaces/Webscraper_Crypto/venv/bin/python3 /home/roman/workspaces/Webscraper_Crypto/gsc.py"
-alias venv="source venv/bin/activate"
+alias venv="source env/bin/activate"
 alias p3='python3 '
 
 alias wtr="curl wttr.in/hannover"
@@ -152,4 +150,4 @@ export GPGKEY
 
 . "$HOME/.cargo/env"
 
-PATH="$HOME/.local/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH:/usr/local/go/bin"
