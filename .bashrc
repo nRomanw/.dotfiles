@@ -5,7 +5,7 @@
 #/\|___  /(____  //____  >|___|  /|__|    \___  > 
 #\/    \/      \/      \/      \/             \/  
                                                  
-neofetch
+fastfetch
 
 # If not running interactively, don't do anything
 case $- in
@@ -109,7 +109,7 @@ alias iv="nsxiv -f *"
 alias cht=cht.sh
 alias tm=tmux
 alias v=nvim
-alias nim=neovide
+alias n="neovide &"
 alias tma='tmux a'
 alias fm=ranger
 
@@ -151,3 +151,7 @@ export GPGKEY
 . "$HOME/.cargo/env"
 
 PATH="$HOME/.local/bin:$PATH:/usr/local/go/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
