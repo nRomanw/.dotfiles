@@ -26,4 +26,5 @@ cargo install nu
 cargo install starship
 cargo install atuin
 
-#autoinstall latest go and nodejs
+brew install node
+brew install go
