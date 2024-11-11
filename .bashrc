@@ -155,3 +155,13 @@ PATH="$HOME/.local/bin:$PATH:/usr/local/go/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source ~/.local/share/blesh/ble.sh
+eval "$(atuin init bash)"
+
+eval "$(zoxide init bash)"
+
+eval "$(starship init bash)"
+
+eval "$(/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
