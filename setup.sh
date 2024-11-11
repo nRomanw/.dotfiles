@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential procps curl file -y
+sudo apt install build-essential cmake protoc-gen-go procps curl file -y
 
 mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.local/share/fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit ~/.config/nvim ~/.config/nushell
 
@@ -23,23 +23,25 @@ ln ~/.dotfiles/dunst/dunstrc ~/.config/dunst
 ln ~/.dotfiles/newsboat/config ~/.config/newsboat
 ln ~/.dotfiles/nushell/config.nu ~/.config/nushell
 ln ~/.dotfiles/nushell/env.nu ~/.config/nushell
+ln ~/.dotfiles/starship.toml ~/.config/starship.toml
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sh <(curl -L https://nixos.org/nix/install) --daemon
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
 echo "deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
 
 sudo apt update -y
 
-sudo apt install unzip pkg-config make timeshift gcc gh gnupg newsboat htop neofetch tldr ripgrep git syncthing virt-manager keepassxc zulumount-gui zulucrypt-gui tmux ranger gufw flatpak xclip libssl-dev -y
+sudo apt install gnome-software-plugin-flatpak unzip pipx pkg-config make timeshift gcc gh gnupg newsboat htop neofetch tldr ripgrep git syncthing virt-manager keepassxc zulumount-gui zulucrypt-gui tmux ranger gufw flatpak xclip libssl-dev -y
 
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
-git clone https://github.com/nRomanw/source-code-pro.git ~/.local/share/fonts
+git clone https://github.com/nRomanw/source-code-pro.git ~/.local/share/fonts/source-code-pro
 
 git clone https://github.com/qmk/qmk_firmware.git ~/
 mv ~/.dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/

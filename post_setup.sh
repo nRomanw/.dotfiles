@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-nix-env -iA nixpkgs.zathura nixpkgs.neovim nixpkgs.lazygit nixpkgs.sqlite nixpkgs.sqlitebrowser
+nix-env -iA nixpkgs.fastfetch nixpkgs.neovim nixpkgs.lazygit nixpkgs.sqlite nixpkgs.sqlitebrowser
 
 
 sudo flatpak install flathub org.torproject.torbrowser-launcher -y
