@@ -27,7 +27,7 @@ ln ~/.dotfiles/nushell/config.nu ~/.config/nushell
 ln ~/.dotfiles/nushell/env.nu ~/.config/nushell
 ln ~/.dotfiles/starship.toml ~/.config/starship.toml
 
-git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git ~/workspaces/clones
+git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git ~/workspaces/clones/ble.sh
 make -C ~/workspaces/clones/ble.sh install PREFIX=~/.local
 
 sh <(curl -L https://nixos.org/nix/install) --daemon
