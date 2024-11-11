@@ -1,0 +1,172 @@
+ls
+cargo install starship --locked
+ls if name has "starship"
+ls | if name has "starship"
+ls | if name == "starship"
+ls | if name = "starship"
+ls
+nvim starship.toml
+exit
+ls
+exit
+atuin init nu | save ~/.local/share/atuin/init.nu
+j conf
+exit
+atuin
+exit
+ls
+cd ..
+ls
+nvim starship.toml
+exit
+sudo apt install eza
+cargo install eza
+eza
+exit
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+nu.config-path
+$nu.config-path
+cd
+cd .config/nushell/
+ls
+nvim config.nu
+exit
+cd
+$SHELL
+exit
+ls
+exit
+cd
+z nu
+zoxide
+z
+cd
+cd .dot
+cd .dotfiles/
+ls
+z
+j
+exit
+z
+eza
+zoxide
+zoxide init
+zoxide init nu
+cd
+ls
+exit
+cd
+z nu
+cd
+z nu
+ls
+ls -la
+history
+eza
+ls
+eza -la
+ll
+all
+sudo apt install fd
+cd
+find ~/autojump.txt
+find ~/ autojump.txt
+find ~/ -file "autojump.txt"
+tldr find
+find ~/ -name "autojump.txt"
+ls -la
+find ~/.local/ -name "autojump.txt"
+cd
+exit
+z Pic
+ls
+cargo install fd
+cargo add fd
+cd
+cargo install fd
+cargo add fd
+cargo install zellij
+ls
+zellij
+exit
+ls
+ls | less
+exit
+ls
+ls | sort-by size
+ls | sort-by size | reverse
+ls | sort-by name
+ls | sort-by name | reverse 
+man nu
+man nushell
+tldr nu
+set
+let
+exit
+$SHELL
+exit
+$env
+man nushell
+find
+find | where name == "autojump.txt"
+find ~/ | where name == "autojump.txt"
+ls | where name == "autojump.txt"
+ls | where name == "bash"
+ls | where name has "bash"
+ls | where name contains "bash"
+ls | where name =~ "bash"
+ls | where name == ".bash"
+ls | where name == ".bashrc"
+ls -la | where name == ".bash"
+ls -la | where name == ".bashrc"
+z config
+nvim starship.toml
+bash
+exit
+nu
+exit
+apt search fish
+exit
+ls
+cd 2024/
+z conf
+v starship.toml
+vim starship.toml
+z share
+z conf
+vim starship.toml
+ls
+ps
+ps aux
+ps | where cpu > 0
+cat starship.toml
+batcat starship.toml
+help
+help where
+help each
+help
+cd
+ls
+cd recherche/
+ls
+cd
+z down
+ls
+cat chinook.db
+batcat chinook.db
+w3m
+z archivar
+ls
+cd 2024/
+ls
+cd May/
+ls
+cd 18
+ls
+cd br
+ls
+w3m --dump 'Krisenfester Hype: Sollten wir jetzt alle in Gold investieren?.html'
+exit
+bash
+exit
