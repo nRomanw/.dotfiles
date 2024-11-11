@@ -25,6 +25,9 @@ ln ~/.dotfiles/nushell/config.nu ~/.config/nushell
 ln ~/.dotfiles/nushell/env.nu ~/.config/nushell
 ln ~/.dotfiles/starship.toml ~/.config/starship.toml
 
+git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
+make -C ble.sh install PREFIX=~/.local
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sh <(curl -L https://nixos.org/nix/install) --daemon
 
