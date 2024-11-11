@@ -47,7 +47,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
 git clone https://github.com/nRomanw/source-code-pro.git ~/.local/share/fonts/source-code-pro
 
-git clone https://github.com/qmk/qmk_firmware.git ~/
+git clone https://github.com/qmk/qmk_firmware.git ~/qmk_firmware/
 mv ~/.dotfiles/rev2 ~/qmk_firmware/keyboards/3w6/
 rm ~/qmk_firmware/keyboards/3w6/rev2/config.h
 ln ~/.dotfiles/qmk/config.h ~/qmk_firmware/keyboards/3w6/rev2
