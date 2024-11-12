@@ -17,6 +17,8 @@ sudo flatpak install flathub org.libreoffice.LibreOffice -y
 sudo flatpak install flathub org.gnome.Maps -y
 sudo flatpak install flathub com.github.tchx84.Flatseal -y
 sudo flatpak install flathub com.vscodium.codium -y
+sudo flatpak install flathub io.podman_desktop.PodmanDesktop -y
+
 
 tldr -u
 
