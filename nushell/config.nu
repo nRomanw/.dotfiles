@@ -899,6 +899,14 @@ $env.config = {
     ]
 }
 
+
+alias nb = newsboat
+alias mail = neomutt
+alias v = nvim
+alias fm = ranger
+alias lg = lazygit
+
+source ~/.cache/carapace/init.nu
 source ~/.zoxide.nu
 use ~/.cache/starship/init.nu
 source ~/.local/share/atuin/init.nu
