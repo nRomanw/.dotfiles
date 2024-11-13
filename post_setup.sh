@@ -30,3 +30,4 @@ cargo install atuin
 
 brew install node
 brew install go
+brew install carapace

@@ -9,6 +9,7 @@ git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvi
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+mkdir -p ~/.cache/carapace
 rm ~/.bashrc
 dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.dotfiles/rose-pine-moon.dconf
 ln ~/.dotfiles/.bashrc ~/
