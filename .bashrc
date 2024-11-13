@@ -153,10 +153,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source ~/.local/share/blesh/ble.sh
+source <(carapace _carapace)
+
 eval "$(atuin init bash)"
 
 eval "$(zoxide init bash)"
 
 eval "$(starship init bash)"
-
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
