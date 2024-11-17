@@ -5,7 +5,6 @@
 #/\|___  /(____  //____  >|___|  /|__|    \___  > 
 #\/    \/      \/      \/      \/             \/  
                                                  
-fastfetch
 
 # If not running interactively, don't do anything
 case $- in
@@ -112,6 +111,7 @@ alias v=nvim
 alias n="neovide &"
 alias tma='tmux a'
 alias fm=ranger
+alias bat=batcat
 
 alias gits="git status"
 alias gita="git add"
@@ -152,12 +152,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
 source ~/.local/share/blesh/ble.sh
-source <(carapace _carapace)
-
-eval "$(atuin init bash)"
-
-eval "$(zoxide init bash)"
-
 eval "$(starship init bash)"
+eval "$(atuin init bash)"
+eval "$(zoxide init bash)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+source <(carapace _carapace)
+fastfetch
