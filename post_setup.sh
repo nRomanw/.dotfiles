@@ -20,13 +20,13 @@ sudo flatpak install flathub com.vscodium.codium -y
 sudo flatpak install flathub io.podman_desktop.PodmanDesktop -y
 
 
-tldr -u
 
 cargo install tmux-sessionizer
 cargo install zoxide
 cargo install nu
 cargo install starship
 cargo install atuin
+cargo install tealdeer
 
 brew install node
 brew install go

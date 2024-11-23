@@ -112,6 +112,7 @@ alias n="neovide &"
 alias tma='tmux a'
 alias fm=ranger
 alias bat=batcat
+alias tldr='/home/roman/.cargo/bin/tldr'
 
 alias gits="git status"
 alias gita="git add"
