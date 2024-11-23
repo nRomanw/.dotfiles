@@ -153,6 +153,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+export MANPAGER='nvim +Man!'
+
 source ~/.local/share/blesh/ble.sh
 eval "$(starship init bash)"
 eval "$(atuin init bash)"
