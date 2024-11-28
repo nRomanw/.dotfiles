@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-nix-env -iA nixpkgs.fastfetch nixpkgs.neovim nixpkgs.lazygit nixpkgs.sqlite nixpkgs.sqlitebrowser
+nix-env -iA nixpkgs.fastfetch nixpkgs.neovim nixpkgs.lazygit nixpkgs.sqlite nixpkgs.sqlitebrowser nixpkgs.github-desktop
 
 sudo flatpak install flathub com.belmoussaoui.Authenticator -y
 sudo flatpak install flathub org.torproject.torbrowser-launcher -y
