@@ -105,7 +105,7 @@ alias wtr="curl wttr.in/hannover"
 alias nb=newsboat
 alias mail=neomutt
 alias iv="nsxiv -f *"
-alias cht=cht.sh
+alias cht="curl cheat.sh"
 alias tm=tmux
 alias v=nvim
 alias n=neovide
@@ -113,6 +113,7 @@ alias tma='tmux a'
 alias fm=ranger
 alias bat=batcat
 alias tldr='/home/roman/.cargo/bin/tldr'
+#alias ttc='python3 ~/workspaces/task-tracker-cli-python/ttc.py'
 
 alias gits="git status"
 alias gita="git add"
