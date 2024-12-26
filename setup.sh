@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential cmake protoc-gen-go procps curl file -y
+sudo apt install build-essential cmake protoc-gen-go procps curl dconf file -y
 
-mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.local/share/fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit ~/.config/nvim ~/.config/nushell
+mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat ~/.config/i3 ~/.local/share/fonts ~/.config/rofi ~/Downloads ~/Pictures ~/Documents ~/.config/i3blocks/scripts ~/.config/dunst ~/.config/lazygit ~/.config/nvim ~/.config/nushell ~/.config/dconf
 
 git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvim
 
@@ -11,8 +11,8 @@ git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvi
 
 mkdir -p ~/.cache/carapace
 rm ~/.bashrc
-dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.dotfiles/rose-pine-moon.dconf
 ln ~/.dotfiles/.bashrc ~/
+ln ~/.dotfiles/dconf/user ~/.config/dconf
 ln ~/.dotfiles/kitty/kitty.conf ~/.config/kitty
 ln ~/.dotfiles/lazygit/config.yml ~/.config/lazygit
 ln ~/.dotfiles/alacritty/alacritty.yml ~/.config/alacritty/
@@ -27,6 +27,7 @@ ln ~/.dotfiles/newsboat/config ~/.config/newsboat
 ln ~/.dotfiles/nushell/config.nu ~/.config/nushell
 ln ~/.dotfiles/nushell/env.nu ~/.config/nushell
 ln ~/.dotfiles/starship.toml ~/.config/starship.toml
+dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.dotfiles/rose-pine-moon.dconf
 
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git ~/workspaces/CLONES/ble.sh
 make -C ~/workspaces/CLONES/ble.sh install PREFIX=~/.local
