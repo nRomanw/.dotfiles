@@ -97,9 +97,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-alias sudo='sudo '
-alias venv="source env/bin/activate"
-alias p3='python3 '
+#alias sudo='sudo '
 
 alias wtr="curl wttr.in/hannover"
 alias nb=newsboat
@@ -113,7 +111,6 @@ alias tma='tmux a'
 alias fm=ranger
 alias bat=batcat
 alias tldr='/home/roman/.cargo/bin/tldr'
-#alias ttc='python3 ~/workspaces/task-tracker-cli-python/ttc.py'
 
 alias gits="git status"
 alias gita="git add"
