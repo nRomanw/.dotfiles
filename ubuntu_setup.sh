@@ -3,7 +3,7 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential cmake protoc-gen-go procps curl dconf file -y
 
-mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat  ~/.local/share/fonts  ~/.config/lazygit ~/.config/nvim 
+mkdir -p ~/.config/tmux ~/.config/kitty ~/.config/alacritty ~/.config/newsboat  ~/.local/share/fonts  ~/.config/lazygit ~/.config/nvim ~/Appimages/ ~/Workspaces/Python ~/Workspaces/Bash
 
 git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvim
 
