@@ -6,7 +6,6 @@
 #\/    \/      \/      \/      \/             \/  
                                                  
 
-fastfetch
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -155,4 +154,5 @@ eval "$(starship init bash)"
 eval "$(atuin init bash)"
 eval "$(zoxide init bash)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fastfetch
 source <(carapace _carapace)
