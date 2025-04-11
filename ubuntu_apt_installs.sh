@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential cmake protoc-gen-go procps curl dconf file -y
-
-git clone https://github.com/nRomanw/my_fork_of_kickstart.nvim.git ~/.config/nvim
+sudo apt install build-essential git cmake protoc-gen-go procps curl dconf file -y
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-dconf load /org/gnome/terminal/legacy/profiles:/ < ~/.dotfiles/rose-pine-moon.dconf
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -18,7 +14,7 @@ sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 
 sudo apt update -y
 
-sudo apt install fastfetch neovim alacritty python-dev-is-python3 gawk fzf gnome-software-plugin-flatpak unzip pipx pkg-config make timeshift gcc gh gnupg newsboat htop neofetch ripgrep git syncthing virt-manager keepassxc zulumount-gui zulucrypt-gui tmux ranger gufw flatpak xclip libssl-dev -y
+sudo apt install fastfetch neovim alacritty python-dev-is-python3 gawk fzf unzip pipx pkg-config make timeshift gcc gh gnupg newsboat btop ripgrep syncthing virt-manager keepassxc zulumount-gui zulucrypt-gui tmux ranger gufw flatpak xclip libssl-dev -y
 
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 
